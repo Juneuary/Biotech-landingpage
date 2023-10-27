@@ -1,0 +1,66 @@
+/* This is the CSS page for the Biotech-landing page index.html */
+
+body{
+    border: solid 1px rgb(0, 255, 21);
+    display:flex;
+    flex-direction: column;
+}
+
+ .header_container, .media, .logo, .company, .links, .product-info
+  {display:flex;
+    align-items:center;
+  
+}
+ .logo > img{
+    width:300px;
+    display:flex;
+    flex-grow:0;
+    flex-shrink:1;
+    flex-basis:auto;
+    border: solid 1px blue;
+}
+.company{
+    font-weight: 900;
+    font-size:32px;
+    color:darkslategrey;
+    font-family: Sans-serif;
+    border: solid 1px blue;
+}
+.links{
+    border: solid 1px blue;
+    gap:10px;
+    margin-left: auto;
+}
+
+li, a{
+    text-decoration: none;
+    list-style-type:none;
+    color:darkslategrey;
+    font-size: 18px;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.media{
+    flex-grow:1;
+   
+}
+.product-info{
+    display:flex;
+    
+    border: solid 1px blue;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.item1, .item2, .item3, .item4{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    height: 300px;
+    border: solid 1px blue;
+    flex: 0 0 auto;
+}
+   .item1, .item2, .item3, .item4 > img{
+    width:200px;
+    height: 200px;
+}
