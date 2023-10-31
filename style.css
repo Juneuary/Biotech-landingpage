@@ -9,35 +9,38 @@ body{
  .header_container, .media, .logo, .company, .links, .product-info
   {display:flex;
     align-items:center;
-    border: solid 1px blue;
    
-  
+}
+.logo{
+    margin-top:10px;
+    margin-left:100px;
 }
  .logo > img{
     width:300px;
+    height:100px;
     display:flex;
     flex-grow:0;
     flex-shrink:1;
     flex-basis:auto;
-    border: solid 1px blue;
 }
 .company{
     font-weight: 900;
     font-size:32px;
-    color:darkslategrey;
+    color:rgb(0, 0, 0);
     font-family: Sans-serif;
-    border: solid 1px blue;
+    padding:20px;
 }
 .links{
-    border: solid 1px blue;
+  
     gap:10px;
     margin-left: auto;
+    padding:20px;
 }
 
 li, a{
     text-decoration: none;
     list-style-type:none;
-    color:darkslategrey;
+    color:rgb(0, 0, 0);
     font-size: 18px;
     font-weight:200;
     font-family: sans-serif;
@@ -45,10 +48,65 @@ li, a{
 .media{
     flex-grow:1;
 }
+.header_container, .intro-container{
+    background-color: rgb(46, 116, 116);
+}
+/* This is the intro page styling information */
+.intro-container  div{
+   
+    display:flex
+}
+.intro-container{
+    display:flex;
+    justify-content: center
+}
+.intro-box1{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-grow:0.5;
+    height: 450px;
+    width:650px;
+    margin:auto;
+    padding:100px;
+    padding-top:50px
+}
+.learn-button, button{
+    display:flex;
+   margin-right:auto;
+   background-color: #e7e7e7;
+   font-size:18px;
+   border-radius: 16px;
+   padding:5px;
+  
+ 
+  
+
+}
+.intro-box2{
+
+   display:flex;
+    flex-grow: 1;
+    justify-content:center
+}
+.text{
+    display:flex;
+    flex-direction:column;
+
+   
+}
+.intro{
+    display:flex;
+    align-self:center;
+    height: 450px;
+    width:650px;
+    margin-right: auto
+
+}
 
 .product-cards{
     display: flex;
-    border: solid 1px blue;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
@@ -58,14 +116,14 @@ li, a{
     display:flex;
     justify-content: center;
     align-content: center;
-    border: solid 1px blue;
+    
 }
 .product-info{
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: rgb(133, 179, 179);
+    
     
 }
 .item1, .item2, .item3, .item4{
@@ -73,7 +131,6 @@ li, a{
     flex-direction: column;
     width:250px;
     height: 350px;
-    border: solid 1px blue;
     margin: 30px 0;
     overflow:hidden;
     color:rgb(5, 8, 8);
@@ -88,4 +145,12 @@ li, a{
       .item4 img{
     width:250px;
     height: 200px;
+}
+h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8
+}
+p{
+    font-size: 18px;
 }
