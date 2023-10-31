@@ -6,7 +6,8 @@ body{
     flex-direction: column;
 }
 
- .header_container, .media, .logo, .company, .links, .product-info
+ .header_container, .media, .logo, .company, .links, .product-info,
+ .signup
   {display:flex;
     align-items:center;
    
@@ -168,4 +169,18 @@ h2{
       .item4 img{
     width:250px;
     height: 200px;
+}
+/* This is the learn more container */
+.signup p{
+    display:flex;
+    color:black;
+}
+.signup{
+    border: 1px solid blue;
+    margin:auto;
+
+}
+.button{
+    margin:auto;
+    padding: 20px
 }
